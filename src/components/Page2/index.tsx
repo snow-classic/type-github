@@ -70,11 +70,11 @@ class Page2 extends React.Component<Page2Props, Page2State> {
         }) : null
         return (
             <div className="wrapper2">
-                <div className="heading-bar">Project of { this.getUsername(this.props.history.location.pathname)}</div>
+                <div className="heading-bar">Projects of { this.getUsername(this.props.history.location.pathname)}</div>
                 <div className="container2">
                     <div className="projects">
                         {data}
-                    <Modal title={`READAME of ${this.state.project} Project`} visible={this.state.isModalVisible} onOk={this.handleOk} onCancel={this.handleCancel} width={1000}>
+                    <Modal title={`READAME.md . ${this.state.project} Project`} visible={this.state.isModalVisible} onOk={this.handleOk} onCancel={this.handleCancel} width={1000}>
                             <div>
                                 <ReactMarkdown>{ this.props.readame? this.props.readame.toString(): ""}</ReactMarkdown>
                            </div>
@@ -88,7 +88,7 @@ class Page2 extends React.Component<Page2Props, Page2State> {
  
 // export default Page1;
 const mapStateToProps = (store: any) => {
-    console.log("store in page 2", store)
+    // console.log("store in page 2", store)
   return {
       ...store,
       repos: store.repos,

@@ -57,7 +57,7 @@ class Page1 extends React.Component<Page1Props, Page1State> {
             <div className="wrapper">
                 <div className="container">
                     <div className="search-box">
-                        <input type="text" className="search-txt" value={ this.state.search} onChange={this.changeListener }/>
+                        <input type="text" placeholder="snow4..." className="search-txt" value={ this.state.search} onChange={this.changeListener }/>
                         <a className="search-button" onClick={() => GetUsers(this.state.search)}>
                             <AiOutlineSearch className="search-btn"/>
                         </a>

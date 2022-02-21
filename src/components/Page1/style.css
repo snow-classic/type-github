@@ -9,7 +9,7 @@
 }
 
 .container{
-width:60%;
+width:70%;
 margin-top: 10%;
 min-height:50%;
 /* background: #fff; */
@@ -126,6 +126,9 @@ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     text-align: center;
 }
 .user-name{
-    padding-left:1em;
-        text-align: center;
+padding-left: 1em;
+    text-align: center;
+    width: inherit;
+    align-self: center;
+    font-size: medium;
 }
