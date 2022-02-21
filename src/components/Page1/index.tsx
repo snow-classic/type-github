@@ -56,6 +56,7 @@ class Page1 extends React.Component<Page1Props, Page1State> {
         return (
             <div className="wrapper">
                 <div className="container">
+                    <h1>Serach Git user</h1>
                     <div className="search-box">
                         <input type="text" placeholder="snow4..." className="search-txt" value={ this.state.search} onChange={this.changeListener }/>
                         <a className="search-button" onClick={() => GetUsers(this.state.search)}>
@@ -63,7 +64,7 @@ class Page1 extends React.Component<Page1Props, Page1State> {
                         </a>
                     </div>
                     <div className="box">
-                        {this.props.users && <h3 className="user-heading">Users</h3>}
+                        {this.props.users && <h2 className="user-heading">Users</h2>}
                     <div className="results-box">
 
                         { data}
