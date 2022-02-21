@@ -2,12 +2,15 @@
 margin:2em;
 }
 .container2{
-    margin-top: 2em;
+    margin-top: 0.6em;
+    /* width:90%; */
+    padding:2em 2em;
     /* background: rgba(247, 244, 244, 0.808); */
 }
 .heading-bar{
     font-size: 25px;
     font-weight: 700;
+    padding:1em;
 }
 .projects{
     display: flex;
