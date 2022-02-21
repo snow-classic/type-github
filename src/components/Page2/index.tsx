@@ -74,7 +74,7 @@ class Page2 extends React.Component<Page2Props, Page2State> {
                 <div className="container2">
                     <div className="projects">
                         {data}
-                    <Modal title={`READAME.md . ${this.state.project} Project`} visible={this.state.isModalVisible} onOk={this.handleOk} onCancel={this.handleCancel} width={1000}>
+                    <Modal title={`READAME.md -> ${this.state.project}`} visible={this.state.isModalVisible} onOk={this.handleOk} onCancel={this.handleCancel} width={1000}>
                             <div>
                                 <ReactMarkdown>{ this.props.readame? this.props.readame.toString(): ""}</ReactMarkdown>
                            </div>
